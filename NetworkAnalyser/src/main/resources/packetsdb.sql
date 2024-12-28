@@ -1,0 +1,7 @@
+CREATE TABLE packet_log{
+	id BIGINT AUTO_INCREMENT PRIMARY KEY,
+	source_ip VARCHAR(255) NOT NULL,
+	destination_ip VARCHAR(255) NOT NULL,
+	protocol VARCHAR(50) NOT NULL,
+	packet_size INT NOT NULL
+}
