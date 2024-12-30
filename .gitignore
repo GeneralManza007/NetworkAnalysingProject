@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/java,macos,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,macos,vim
+# Created by https://www.toptal.com/developers/gitignore/api/maven,macos,java,react,vim
+# Edit at https://www.toptal.com/developers/gitignore?templates=maven,macos,java,react,vim
 
 ### Java ###
 # Compiled class file
@@ -60,6 +60,40 @@ Temporary Items
 # iCloud generated files
 *.icloud
 
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# https://github.com/takari/maven-wrapper#usage-without-binary-jar
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse m2e generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+### react ###
+.DS_*
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### Vim ###
 # Swap
 [._]*.s[a-v][a-z]
@@ -81,5 +115,4 @@ tags
 # Persistent undo
 [._]*.un~
 
-# End of https://www.toptal.com/developers/gitignore/api/java,macos,vim
-/.metadata/
+# End of https://www.toptal.com/developers/gitignore/api/maven,macos,java,react,vim
