@@ -1,16 +1,24 @@
 package com.github.GeneralManza007.NetworkAnalyser.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class PacketLog {
 	
-	
+	@Id
+	@GeneratedValue
 	private Long id;
-	
+
+	@Column(name = "source_ip", nullable = false)
 	private String sourceIp;
 	
+	@Column(name = "destination_ip", nullable = false)
 	private String destinationIp;
 	
+	@Column(name = "protocol", nullable = false)
 	private String protocol;
 	
+	@Column(name = "packet_size", nullable = false)
 	private Integer packetSize;
 	
 	public Long getId() {
@@ -52,5 +60,4 @@ public class PacketLog {
 	public void setPacketSize(Integer packetSize) {
 		this.packetSize = packetSize;
 	}
-
 }
